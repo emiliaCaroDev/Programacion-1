@@ -1,0 +1,17 @@
+*{
+    text-transform: uppercase;
+}
+.nav-bar ul li{
+    list-style: none;
+}
+
+.foto-perfil{
+    background-position: right center;
+    background-size: contain;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*------------------------- ABOUT ------------------------------------*/
