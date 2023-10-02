@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto', sans-serif;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+    border: blue 1px solid;
+}
+
+body{
+    background-image: url("../img/bg-body.png");
+    
+}
+
+/****************** Header ***********************/
+header,main,footer{
+    border: 1px red solid;
+    width: 90vw;
+    margin:10px auto;
+}
+
+header{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav, header div{
+    margin:5px 0;
+}
+
+ul{
+    padding: 5px 0;
+}
+
+.login,.logo, .nav-bar{
+    border: 1px solid green;
+}
+
+.nav-bar{
+    display: none;
+}
+
+.login{
+    width: 100%;
+}
+
+.enlaces-login{
+    display: flex;
+    gap:10px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 5px;
+}
+
+.logo img{
+    border-radius: 50%;
+    border: 1px solid #444;
+}
+
+.burger-menu{
+    border: 1px solid #000;
+    padding: 8px;
+    background-color: #444;
+}
+
+.boton{
+    background-color: #444;
+    color:white;
+    font-size: 18px;
+    text-align: center;
+}
+
+/****************** Main ***********************/
+.banner{
+    display: none;
+}
+
+section{
+    border: #444 1px solid;
+}
+
+section article{
+    border: 1px solid green;
+    margin:15px 0;
+}
+article div{
+    border:  1px solid blue; 
+}
+
+article img{
+    width: 100%;
+}
+
+div h2, div p, div a{
+    border: 1px solid palevioletred;
+    padding: 5px;
+    margin: 5px;
+}
+
+.ver-mas{
+    display: block;
+    width: 25%;
+}
+
+/****************** Footer ***********************/
+.enlaces-footer{
+    border: 1px solid green;
+    display: flex;
+    gap:8px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-destacado{
+    text-transform: uppercase;
+    color: white;
+    padding: 5px;
+}
+
+.enlaces-footer li{
+    border: 1px solid red;
+    width: 100%;
+    padding: 5px;
+}
+
+
+
+/************************* TABLET *********************/
+@media(min-width: 481px){
+    body{
+        background-color: rgb(212, 246, 150);
+    }
+
+    .enlaces-login{
+        justify-content: flex-end;
+
+    }
+    
+
+    .burger-menu{
+        display: none;
+    }
+
+    .nav-bar{
+        display: flex;
+        width: 100%;
+    }
+
+    .enlaces-nav{
+        display: flex;
+        width: 100%;
+        gap:15px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+/****************** Main ***********************/
+    
+    .banner{
+        display: flex;
+        
+    }
+
+    .banner img{
+        width: 100%;
+    }
+
+    section{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    section article{
+        display: flex;
+        flex-flow: column wrap;
+        width: 49%;
+        
+    }
+}
